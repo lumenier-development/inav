@@ -38,6 +38,8 @@
 #define BUS_SPI2    SPIDEV_2
 #define BUS_SPI3    SPIDEV_3
 #define BUS_SPI4    SPIDEV_4
+#define BUS_SPI5    SPIDEV_5
+#define BUS_SPI6    SPIDEV_6
 
 #define BUS_I2C1            I2CDEV_1
 #define BUS_I2C2            I2CDEV_2
