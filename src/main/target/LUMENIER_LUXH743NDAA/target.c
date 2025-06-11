@@ -25,15 +25,15 @@
 #include "drivers/bus.h"
 
 timerHardware_t timerHardware[] = {
-    DEF_TIM(TIM1,  CH1, PE9,   TIM_USE_MOTOR,                       0, 0 ), // M1
-    DEF_TIM(TIM1,  CH2, PE11,  TIM_USE_MOTOR,                       0, 1 ), // M2
-    DEF_TIM(TIM1,  CH3, PE13,  TIM_USE_MOTOR,                       0, 2 ), // M3
-    DEF_TIM(TIM1,  CH4, PE14,  TIM_USE_MOTOR,                       0, 3 ), // M4
+    DEF_TIM(TIM1,  CH1, PE9,   TIM_USE_OUTPUT_AUTO,                  0, 0 ), // M1
+    DEF_TIM(TIM1,  CH2, PE11,  TIM_USE_OUTPUT_AUTO,                  0, 1 ), // M2
+    DEF_TIM(TIM1,  CH3, PE13,  TIM_USE_OUTPUT_AUTO,                  0, 2 ), // M3
+    DEF_TIM(TIM1,  CH4, PE14,  TIM_USE_OUTPUT_AUTO,                  0, 3 ), // M4
 
-    DEF_TIM(TIM8,  CH1, PC6,   TIM_USE_MOTOR,                       0, 4 ), // M5
-    DEF_TIM(TIM8,  CH2, PC7,   TIM_USE_MOTOR,                       0, 5 ), // M6
-    DEF_TIM(TIM8,  CH3, PC8,   TIM_USE_MOTOR,                       0, 6 ), // M7
-    DEF_TIM(TIM8,  CH4, PC9,   TIM_USE_MOTOR,                       0, 7 ), // M8
+    DEF_TIM(TIM8,  CH1, PC6,   TIM_USE_OUTPUT_AUTO,                  0, 4 ), // M5
+    DEF_TIM(TIM8,  CH2, PC7,   TIM_USE_OUTPUT_AUTO,                  0, 5 ), // M6
+    DEF_TIM(TIM8,  CH3, PC8,   TIM_USE_OUTPUT_AUTO,                  0, 6 ), // M7
+    DEF_TIM(TIM8,  CH4, PC9,   TIM_USE_OUTPUT_AUTO,                  0, 7 ), // M8
    
     DEF_TIM(TIM4,  CH1, PD12,  TIM_USE_OUTPUT_AUTO,                  0, 0 ), // S1
     DEF_TIM(TIM4,  CH2, PD13,  TIM_USE_OUTPUT_AUTO,                  0, 0 ), // S2
