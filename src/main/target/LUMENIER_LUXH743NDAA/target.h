@@ -36,20 +36,20 @@
 // ** LIS2MDL not yet supported by INAV! **
 #define USE_I2C
 
-#define USE_I2C_DEVICE_1
-#define I2C1_SCL                PB8
-#define I2C1_SDA                PB9
-
 #define USE_I2C_DEVICE_4
-#define I2C4_SCL                PB6
-#define I2C4_SDA                PB7
+#define I2C4_SCL                PB8
+#define I2C4_SDA                PB9
+
+#define USE_I2C_DEVICE_1
+#define I2C1_SCL                PB6
+#define I2C1_SDA                PB7
 
 #define USE_BARO
-#define BARO_I2C_BUS            BUS_I2C1
+#define BARO_I2C_BUS            BUS_I2C4
 #define USE_BARO_DPS310
 
 #define USE_MAG
-#define MAG_I2C_BUS             BUS_I2C4
+#define MAG_I2C_BUS             BUS_I2C1
 #define USE_MAG_ALL
 
 // *************** ENABLE OPTICAL FLOW & RANGEFINDER *****************************
@@ -101,7 +101,7 @@
 #define USE_SPI_DEVICE_2
 #define USE_SPI_DEVICE_3
 #define USE_SPI_DEVICE_4
-#define USE_SPI_DEVICE_6
+// #define USE_SPI_DEVICE_6
 
 // Flash
 #define SPI1_SCK_PIN            PA5
@@ -141,6 +141,7 @@
 #define MAX7456_CS_PIN          PE4
 
 // ICM-42688-P Gyro
+/* 
 #define SPI6_SCK_PIN            PB3
 #define SPI6_MISO_PIN           PB4
 #define SPI6_MOSI_PIN           PB5
@@ -150,6 +151,7 @@
 
 #define USE_IMU_ICM42605
 #define IMU_ICM42605_ALIGN      CW270_DEG_FLIP
+*/
 
 // *************** Sensors & ADC *****************************
 #define SENSORS_SET (SENSOR_ACC|SENSOR_MAG|SENSOR_BARO)

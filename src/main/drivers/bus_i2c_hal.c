@@ -402,9 +402,13 @@ void i2cInit(I2CDevice device)
     pHandle->Init.NoStretchMode   = I2C_NOSTRETCH_DISABLE;
 
 
-    HAL_I2C_Init(pHandle);
+    if (HAL_I2C_Init(pHandle) != HAL_OK) {
+        return;
+    }
     /* Enable the Analog I2C Filter */
-    HAL_I2CEx_ConfigAnalogFilter(pHandle, I2C_ANALOGFILTER_ENABLE);
+    if (HAL_I2CEx_ConfigAnalogFilter(pHandle, I2C_ANALOGFILTER_ENABLE) != HAL_OK) {
+        return;
+    }
 
     HAL_NVIC_SetPriority(hardware->er_irq, NVIC_PRIO_I2C_ER, 0);
     HAL_NVIC_EnableIRQ(hardware->er_irq);
