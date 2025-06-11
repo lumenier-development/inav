@@ -27,6 +27,7 @@
 #include "drivers/bus_spi.h"
 #include "drivers/io.h"
 #include "drivers/io_impl.h"
+#include "io/piniobox.h"
 
 #include "drivers/sdcard/sdcard.h"
 #include "io/asyncfatfs/asyncfatfs.h"
@@ -46,6 +47,10 @@ void initialisePreBootHardware(void)
     sdcardInsertionDetectInit();
     sdcard_init();
     afatfs_init();
+
+    // PINIOBOX Setup
+    pinioBoxConfigMutable()->permanentId[0] = BOX_PERMANENT_ID_USER1;
+    pinioBoxConfigMutable()->permanentId[1] = BOX_PERMANENT_ID_USER2;
 }
 
 #endif

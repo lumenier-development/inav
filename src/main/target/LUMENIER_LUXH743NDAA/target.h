@@ -182,6 +182,13 @@
 #define USE_SERIAL_4WAY_BLHELI_INTERFACE
 
 // *************** GPIO & PWM Outputs *****************************
+#define USE_PINIO
+#define USE_PINIOBOX
+// PINIO to Switch Camera
+#define PINIO1_PIN              PB1
+// PINIO to Disable VTX Power
+#define PINIO2_PIN              PB2
+
 #define MAX_PWM_OUTPUT_PORTS    15
 #define USE_DSHOT
 #define USE_ESC_SENSOR
