@@ -1454,6 +1454,7 @@
 | `DEVHW_SDCARD` | 54 |  |
 | `DEVHW_IRLOCK` | 55 |  |
 | `DEVHW_PCF8574` | 56 |  |
+| `DEVHW_LIS2MDL` | 57 |  |
 
 ---
 ## <a id="enum-deviceflags_e"></a>`deviceFlags_e`
@@ -3369,7 +3370,8 @@
 | `MAG_RM3100` | 13 |  |
 | `MAG_VCM5883` | 14 |  |
 | `MAG_MLX90393` | 15 |  |
-| `MAG_FAKE` | 16 |  |
+| `MAG_LI2MDL` | 16 |  |
+| `MAG_FAKE` | 17 |  |
 | `MAG_MAX` | MAG_FAKE |  |
 
 ---

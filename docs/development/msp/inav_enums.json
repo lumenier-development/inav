@@ -847,7 +847,8 @@
         "DEVHW_UG2864": "53",
         "DEVHW_SDCARD": "54",
         "DEVHW_IRLOCK": "55",
-        "DEVHW_PCF8574": "56"
+        "DEVHW_PCF8574": "56",
+        "DEVHW_LIS2MDL": "57"
     },
     "deviceFlags_e": {
         "_source": "inav/src/main/drivers/bus.h",
@@ -2233,7 +2234,8 @@
         "MAG_RM3100": "13",
         "MAG_VCM5883": "14",
         "MAG_MLX90393": "15",
-        "MAG_FAKE": "16",
+        "MAG_LIS2MDL": "16",
+        "MAG_FAKE": "17",
         "MAG_MAX": "MAG_FAKE"
     },
     "mavlinkAutopilotType_e": {
